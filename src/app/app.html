@@ -1,27 +1,5 @@
 <div class="contenedor">
-  <h1>{{ titulo }}</h1>
-  <p class="descripcion">{{ descripcion }}</p>
-  <h2>{{ curso }}</h2>
-
-  <button class="boton" (click)="alternarMensaje()">Mostrar / Ocultar Mensaje</button>
-
-  <div class="mensaje" *ngIf="mostrarMensaje">
-    <p>Bienvenidos a la segunda semana del proyecto Taskflow</p>
-  </div>
-
-  <div class="tarjeta">
-    <h3>Lista de tareas</h3>
-    <div class="tarea" *ngFor="let tarea of tareas">
-      <h4>{{ tarea.titulo }}</h4>
-      <p>{{ tarea.descripcion }}</p>
-      <p>Prioridad: {{ tarea.prioridad }}</p>
-      <p [ngClass]="tarea.completada ? 'completada' : 'pendiente'">
-        Estado: {{ tarea.completada ? 'Completada' : 'Pendiente' }}
-      </p>
-      <p>Fecha límite: {{ tarea.fechaLimite }}</p>
-      <p>Estado de fecha: {{ obtenerEstadoFecha(tarea.fechaLimite) }}</p>
-
-      <button class="boton-secundario" (click)="cambiarEstado(tarea)">Cambiar estado</button>
-    </div>
-  </div>
+  <app-header></app-header>
+  <app-task-list></app-task-list>
+  <app-footer></app-footer>
 </div>

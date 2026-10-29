@@ -1,0 +1,54 @@
+.task-list {
+  margin-top: 20px;
+}
+.tarjeta {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background-color: #f7f9fc;
+}
+.tarea {
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: white;
+}
+.tarea h4 {
+  margin-bottom: 8px;
+  color: #1f3c88;
+}
+.boton,
+.boton-secundario {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.boton {
+  background-color: #1f3c88;
+  color: white;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+.boton-secundario {
+  background-color: #e3eaf7;
+  color: #1f3c88;
+}
+.mensaje {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #eef4ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.completada {
+  color: green;
+  font-weight: bold;
+}
+.pendiente {
+  color: red;
+  font-weight: bold;
+}
